@@ -1,0 +1,15 @@
+apiVersion: cloud.google.com/v1
+kind: BackendConfig
+metadata:
+  name: india-only-backend
+  namespace: hello
+spec:
+  securityPolicy:
+    name: india-only
+  healthCheck:
+    checkIntervalSec: 15
+    port: 8080
+    type: HTTP
+    requestPath: /
+  connectionDraining:
+    drainingTimeoutSec: 30
