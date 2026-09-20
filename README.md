@@ -579,3 +579,7 @@ graph TD
 | Ingress ADDRESS stays empty | ALB provisioning failed | `kubectl describe ingress -n hello` — check events |
 | 403 on curl from your machine | Cloud Armor blocking non-India IP | Check your IP at ipinfo.io — if VPN is on, turn it off |
 | Pod stuck in `ImagePullBackOff` | Can't reach registry | Verify Cloud NAT is configured and running |
+
+## Development and review
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for local checks, configuration handling, and the review workflow.
